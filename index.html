@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CLQKXSC17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2CLQKXSC17');
+    </script>
+    <!--
+		Basic
+	-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>0xhrsh</title>
+
+    <meta property="og:title" content="0xhrsh" />
+    <meta name="author" content="0xhrsh" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://0xhrsh.com/" />
+    <meta property="og:image" content="https://0xhrsh.com/images/bg.avif" />
+    <meta property="og:description" content="hey folks! i am hrsh and this is what i am upto these days." />
+    <meta name="theme-color" content="#073a51">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!--
+		Load Fonts
+	-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" async defer />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        async defer>
+    <!--
+		Load CSS
+	-->
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/blogs.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+
+    <!--
+		Background Gradient
+	-->
+    <link rel="stylesheet" href="css/gradient.css" />
+
+    <!--
+		Template New-Skin
+	-->
+    <link rel="stylesheet" href="css/new-skin/new-skin.css" />
+
+    <!--
+		Template RTL
+	-->
+    <!--<link rel="stylesheet" href="css/rtl.css" />-->
+
+    <!--
+		Template Colors
+	-->
+    <!-- <link rel="stylesheet" href="css/template-colors/green.css" /> -->
+    <link rel="stylesheet" href="css/template-colors/blue.css" />
+    <!-- <link rel="stylesheet" href="css/template-colors/orange.css" /> -->
+    <!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
+
+    <!--
+		Template Dark
+	-->
+    <link id="dark" rel="stylesheet" href="css/template-dark/dark.css" />
+
+
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+</head>
+
+<body onload="sendLocation()">
+    <div id="plugin" style="
+        position: fixed;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 25px;
+        padding: 3px 10px;
+        padding-right: 50px;
+        top: 100px;
+        right: -43px;
+        z-index: 101;
+        color: white;
+        background-color: #555;
+        opacity: 0.8;
+      ">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span id="plugin-text"></span>
+    </div>
+    <div class="page new-skin">
+        <!-- preloader -->
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- background -->
+        <div class="background"></div>
+
+        <!--
+			Container
+		-->
+        <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+            <!--
+				Header
+			-->
+            <header class="header">
+                <!-- menu -->
+                <div class="top-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html#about-card" onclick="clickEvent('click_about')">
+                                <span class="icon"><i class="fa fa-user"></i></span>
+                                <span class="link">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#resume-card" onclick="clickEvent('click_resume')">
+                                <span class="icon"><i class="fa fa-list"></i></span>
+                                <span class="link">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#works-card" onclick="clickEvent('click_projects')">
+                                <span class="icon"><i class="fa fa-cogs"></i></span>
+                                <span class="link">Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#contacts-card" onclick="clickEvent('click_contact')">
+                                <span class="icon"><i class="fa fa-envelope"></i></span>
+                                <span class="link">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!--
+				Card - Started
+			-->
+            <div class="card-started" id="home-card">
+                <!--
+					Profile
+				-->
+                <div class="profile">
+                    <!-- profile image -->
+                    <div class="slide" style="background-image: url(images/bg.avif);"></div>
+
+                    <!-- profile photo -->
+                    <div class="image">
+                        <img src="images/profile.gif" alt="" />
+                    </div>
+
+                    <!-- profile titles -->
+
+                    <div class="title">0xhrsh</div>
+                    <div class="description">kickass programmer</div>
+                    <div class="description">strategic cloud engineer @ google</div>
+                    <div class="description">exploring deep-tech @ engagebud</div>
+
+                    <!-- profile socials -->
+                    <div class="social">
+                        <a target="_blank" href="mailto:yo@0xhrsh.com" onclick="clickEvent('click_mail')"><span
+                                class="fa fa-envelope"></span></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/0xhrsh"
+                            onclick="clickEvent('click_linkedin')"><i class="fa fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/0xhrsh" onclick="clickEvent('click_github')"><span
+                                class="fa fa-github"></span></a>
+                        <a target="_blank" href="https://twitter.com/0xhrsh" onclick="clickEvent('click_twitter')"><span
+                                class="fa fa-twitter"></span></a>
+
+                    </div>
+
+                    <!-- profile buttons -->
+                    <div class="lnks">
+                        <a href="resume/Harsh_Anand_Resume.pdf" target="_blank" class="lnk"
+                            onclick="clickEvent('resume_download')">
+                            <span class="text">Download CV</span>
+                            <span class="ion"><i class="fa fa-download"></i></span>
+                        </a>
+                        <a href="index.html#" class="lnk discover" onclick="clickEvent('click_contact')">
+                            <span class="text">Contact Me</span>
+                            <span class="arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+				Card - About
+			-->
+            <div class="card-inner animated active" id="about-card">
+                <div class="card-wrap">
+                    <!-- 
+						About 
+					-->
+                    <div class="content about">
+                        <!-- title -->
+                        <div class="title">about me</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col col-d-12 col-t-12 col-m-12">
+                                <div class="text-box">
+                                    <p>
+                                        hey, i'm hrsh! a builder, a hacker and a wannabe entrepreneur.
+                                    </p>
+                                    <p>
+                                        i'm currently a cloud engineer at google and exploring deep-tech at engagebud. i
+                                        am interested in building scalable systems and solving complex problems.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        this introduction is written by github co-pilot (but is true nonetheless).
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="content services">
+                        <div class="title">My Interests</div>
+                        <div class="row service-items border-line-v">
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item">
+                                    <div class="icon"><span class="ion ion-code"></span></div>
+                                    <div class="name">AR/VR</div>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item">
+                                    <div class="icon">
+                                        <span class="ion ion-music-note"></span>
+                                    </div>
+                                    <div class="name">BlockChain</div>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="service-item">
+                                    <div class="icon">
+                                        <span class="ion ion-speakerphone"></span>
+                                    </div>
+                                    <div class="name">Open Source</div>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="service-item">
+                                    <div class="icon">
+                                        <span class="ion ion-ios-game-controller-b"></span>
+                                    </div>
+                                    <div class="name">Startups</div>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="content fuct">
+                        <div class="title">Fun Facts</div>
+                        <div class="row fuct-items">
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="fuct-item">
+                                    <div class="icon"><span class="ion ion-disc"></span></div>
+                                    <div class="name">80 Albumes Listened</div>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="fuct-item">
+                                    <div class="icon"><span class="ion ion-trophy"></span></div>
+                                    <div class="name">5 Times watched F.R.I.E.N.D.S</div>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="fuct-item">
+                                    <div class="icon"><span class="ion ion-bag"></span></div>
+                                    <div class="name">55 Interviews given</div>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="fuct-item">
+                                    <div class="icon"><span class="ion ion-flag"></span></div>
+                                    <div class="name">5 Countries Visited</div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!--
+				Card - Resume
+			-->
+            <div class="card-inner" id="resume-card">
+                <div class="card-wrap">
+                    <!--
+						Resume
+					-->
+                    <div class="content resume">
+                        <!-- title -->
+                        <div class="title">resume</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <!-- education -->
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="resume-title border-line-h">
+                                    <div class="icon"><i class="fa fa-university"></i></div>
+                                    <div class="name">education</div>
+                                </div>
+                                <div class="resume-items">
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018 - 2022</div>
+                                        <div class="name">
+                                            Indian Institute of Technology Jodhpur
+                                        </div>
+                                        <p>
+                                            Bachelor of Technology in Computer Science & Engineering (Major) <br>
+                                            Minor in Entrepreneurship
+                                        </p>
+                                    </div>
+                                    <div class="resume-item">
+                                        <div class="date">2016 - 2018</div>
+                                        <div class="name">
+                                            D.A.V. Public School Kurukshetra
+                                        </div>
+                                        <p>
+                                            Senior Secondary High School
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- experience -->
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="resume-title border-line-h">
+                                    <div class="icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="name">experience</div>
+                                </div>
+                                <div class="resume-items">
+                                    <div class="resume-item border-line-h active">
+                                        <div class="date">July 2022 - present</div>
+                                        <div class="name">Strategic Cloud Engineer</div>
+                                        <div class="company">Google India</div>
+                                        <p>
+                                            Building for the companies onboarding the google cloud platform from on-prem
+                                            infrastructure.
+                                        </p>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">June 2022 - December 2022</div>
+                                        <div class="name">BlockChain Developer</div>
+                                        <div class="company">0Chain</div>
+                                        <p>
+                                            Worked on certain security aspects of the MPT (Merkle Patricia Tree) and
+                                            helped optimise the blocks.
+                                        </p>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">July 2021 - May 2022</div>
+                                        <div class="name">Co-Founder and CTO</div>
+                                        <div class="company">dimensionEd</div>
+                                        <p>
+                                            Created a highly scalable platform for teachers and students to learn and
+                                            interact over 3D and AR. Created automated tools to generate 3D models from
+                                            text!
+                                        </p>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">May 2021 - July 2021</div>
+                                        <div class="name">Software Engineering Intern</div>
+                                        <div class="company">Codenation (now Trilogy)</div>
+                                        <p>
+                                            Created a mini-proxy that runs inside an AWS lambda to facilitate cloud
+                                            deployment of actions. Deployed a workflow to create cloud deployables from
+                                            Swagger(OpenAPI).
+                                        </p>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">Jan 2020 - Apr 2020</div>
+                                        <div class="name">Backend Intern</div>
+                                        <div class="company">Greedy Game</div>
+                                        <p>
+                                            Successfully developed a micro-service to detect anomalies in advertisement
+                                            data using self developed statistical model in Golang.
+                                            Developed a recommendation system to list-out the possible causes of
+                                            anomaly
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="skills-list list">
+                                    <div class="skill-title border-line-h">
+                                        <div class="icon">
+                                            <i class="fa fa-trophy"></i>
+                                        </div>
+                                        <div class="name">achievements</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border-line-h">
+                                            <div class="name">KVPY Scholarship:</div>
+                                            <p>
+                                                Cleared both rounds of KVPY 2017- Kishore Vaigyanik
+                                                Protsahan Yojna.
+                                            </p>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name">ICPC Amritapuri Regionals </div>
+                                            <p>
+                                                Team bagged 127 Rank at ICPC 2019-2020 Amritapuri
+                                                Onsite Regionals (Team: Code_Wade)
+                                            </p>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name">NSTSE</div>
+                                            <p>
+                                                Got All India Rank 76 in National Science Talent Search Exam.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+				Card - Projects
+			-->
+            <div class="card-inner" id="works-card">
+                <div class="card-wrap">
+                    <div class="content contacts">
+                        <!-- title -->
+                        <div class="title">projects</div>
+                        i'm too lazy to add projects, just check my <a href="https://github.com/0xhrsh">github <i
+                                class="fa fa-external-link"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+				Card - Contacts
+			-->
+            <div class="card-inner contacts" id="contacts-card">
+                <div class="card-wrap">
+
+                    <!--
+						Contact Form
+					-->
+                    <div class="content contacts">
+                        <!-- title -->
+                        <div class="title">contact form</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="contact_form">
+                                    <div style="margin-bottom: 15px;">
+                                        feel free to reach out!
+                                    </div>
+                                    <form id="cform" method="post">
+                                        <div class="row">
+                                            <div class="col col-d-6 col-t-6 col-m-12">
+                                                <div class="group-val">
+                                                    <input type="text" name="name" placeholder="name" />
+                                                </div>
+                                            </div>
+                                            <div class="col col-d-6 col-t-6 col-m-12">
+                                                <div class="group-val">
+                                                    <input type="email" name="email" placeholder="email" />
+                                                </div>
+                                            </div>
+                                            <div class="col col-d-12 col-t-12 col-m-12">
+                                                <div class="group-val">
+                                                    <textarea name="message" placeholder="what's up?"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="send message" class="button" style="
+                          background: none;
+                          border: none;
+                          text-align: left;
+                          width: fit-content;
+                        " />
+                                    </form>
+                                    <div class="alert-success">
+                                        <p>thanks, your message is sent successfully! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+		jQuery Scripts
+  -->
+    <script>
+
+        function httpGet(theUrl) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", theUrl, false); // false for synchronous request
+            xmlHttp.send(null);
+            return xmlHttp.responseText;
+        }
+
+        function sendLocation($) {
+            var location = httpGet("https://api.db-ip.com/v2/free/self");
+            sendMessage('[VISITOR ALERT] Visitor at `0xhrsh.com` :face_in_clouds: ```' + location + '```');
+        }
+
+        function sendMessage(content, acknowledge = false, channel = 0) {
+            var request = new XMLHttpRequest();
+
+            if (acknowledge === true) {
+                request.onload = function () {
+                    if (this.status === 204) {
+                        $("#cform").fadeOut();
+                        $(".alert-success").delay(1000).fadeIn();
+                    }
+                    console.log(this.status);
+                };
+            }
+            var url = "https://discord.com/api/webhooks/1044996660104790116/lrm9f2JF9JQFclQiH8fhTP9tjUS8x9SiCwi2rA8foFLXt2YIhwGTuke-M2eeSE4AsAGQ";
+            if (channel === 1) {
+                url = "https://discord.com/api/webhooks/1044992912523538482/juGmgvUqNqwNVnvf4yl-tfbeQ9rx9X66XHXUxdAdZ1Tj7tKj2u0s8ilvBjB93QXmGcMD";
+            }
+            request.open("POST", url);
+
+            request.setRequestHeader('Content-type', 'application/json');
+
+            var params = {
+                username: "Captain Hook",
+                avatar_url: "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1617895865151-MAF4AM1DPG3EUO93L78T/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/first-look-at-jude-law-as-captain-hook-in-disneys-peter-pan-wendy.jpg?format=2500w",
+                content: content
+            }
+
+            request.send(JSON.stringify(params))
+        }
+
+        function clickEvent(event) {
+            gtag('event', event, {
+                'event_name': event
+            });
+        }
+
+        const myForm = document.getElementById("cform");
+        myForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(myForm);
+            // sendMessage('[MESSAGE ALERT] ' + formData.get('name') + '<' + formData.get('email') + '> :mailbox: ```' + formData.get('message') + '```', true, 1);
+            var location = httpGet("https://api.db-ip.com/v2/free/self");
+            sendMessage('[MESSAGE ALERT] ' + formData.get('name') + ' (' + formData.get('email') + ') :mailbox: ```' + formData.get('message') + '``` ```' + location + '``` cc:<@745343708936798319>', true, 1);
+        });
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <!--
+		Main Scripts
+	-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
